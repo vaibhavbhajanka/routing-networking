@@ -1,0 +1,22 @@
+<table border="2px">
+  <tr>
+    <th>MISSION NAME</th>
+    <th>MISSION ID</th>
+    <th>MANUFACTURERS</th>
+    <th>PAYLOAD IDs</th>
+    <th>WIKIPEDIA</th>
+    <th>WEBSITE</th>
+    <th>TWITTER</th>
+    <th>DESCRIPTION</th>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{item.mission_name}}</td>
+    <td>{{item.mission_id}}</td>
+    <td>{{item.manufacturers}}</td>
+    <td>{{item.payload_ids}}</td>
+    <td><a href="{{item.wikipedia}}">{{item.wikipedia}}</a></td>
+    <td><a href="{{item.website}}">{{item.website}}</a></td>
+    <td><a href="{{item.twitter}}">{{item.twitter}}</a></td>
+    <td>{{item.description}}</td>
+  </tr>
+</table>
